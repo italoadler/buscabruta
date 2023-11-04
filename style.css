@@ -1,0 +1,45 @@
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-family: Anton;
+}
+
+/* BOTÃO */
+button {
+    background: none;
+    border: 3px solid black;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    color: black;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 2.5s;
+}
+
+button:hover {
+    background: black;
+    color: white;
+}
+
+/* BARRA DE BUSCA */
+
+input {
+    background: none;
+    border: 3px solid black;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    color: black;
+    padding: 10px 20px;
+}
+
+input:focus {
+    outline: none;
+    border-color: red;
+}
