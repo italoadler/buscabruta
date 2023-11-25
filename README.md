@@ -10,14 +10,19 @@ Busca Bruta é uma search engine de conteúdos culturais e artísticos. Ele perm
 - Criação de listas personalizadas de obras favoritas, assistidas, ou desejadas
 - Compartilhamento de opiniões, comentários, e avaliações sobre as obras com outros usuários
 - Integração com plataformas de streaming, compra, ou empréstimo de obras, como Netflix, Spotify, Amazon, etc.
+- Criação, exibição, e comercialização de obras de arte digitais usando recursos web 3, como blockchain, smart contracts, NFTs, etc.
 
-## Dependências
+## Tecnologias
 
-- Python 3.9 ou superior
-- Flask 2.0.1 ou superior
-- Beautiful Soup 4.9.3 ou superior
-- Requests 2.25.1 ou superior
-- Outras bibliotecas listadas no arquivo requirements.txt
+O Busca Bruta é um projeto desenvolvido usando uma stack baseada em JavaScript. As principais tecnologias usadas são:
+
+- Node.js: um ambiente de execução JavaScript que permite criar aplicações web escaláveis e eficientes
+- Express: um framework web para Node.js que facilita a criação de rotas, middleware, e APIs
+- MongoDB: um banco de dados NoSQL orientado a documentos que armazena os dados em formato JSON
+- React: uma biblioteca JavaScript para criar interfaces de usuário dinâmicas e reativas
+- Next.js: um framework web para React que permite criar aplicações web estáticas ou híbridas com renderização no lado do servidor
+- Web3.js: uma biblioteca JavaScript que permite interagir com redes blockchain e contratos inteligentes
+- Outras bibliotecas listadas no arquivo package.json
 
 ## Instalação
 
