@@ -1,5 +1,3 @@
-# buscabruta
-
 # Busca Bruta
 
 Busca Bruta é uma search engine de conteúdos culturais e artísticos. Ele permite que você pesquise por filmes, músicas, livros, podcasts, jogos, e outras formas de expressão artística, usando critérios como gênero, tema, estilo, ano, país, e muito mais. Você pode descobrir novas obras, explorar diferentes culturas, e encontrar inspiração para as suas próprias criações.
