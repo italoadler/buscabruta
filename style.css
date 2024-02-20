@@ -12,11 +12,24 @@ main  {
     align-items: center;
     min-height: 80vh;
     border: 3px solid black;
+    background-image: no-repeat url('https://ubuweb.com/images/beckett_header_new.jpg');
+    box-shadow: 
+    3px 3px 0px 0px black, 
+    6px 6px 0px 0px black, 
+    9px 9px 0px 0px  black;
 }
 
 
 h1 {
     font-family: Anton;
+}
+p {
+    letter-spacing: 1px;
+    transition: letter-spacing 1s;
+}
+
+p:hover {
+    letter-spacing: 4px;
 }
 header {
     display: flex;
@@ -31,6 +44,10 @@ header {
     border: 3px solid black;
     margin-bottom: 20px;
     max-height: 15vh;
+    box-shadow: 
+        3px 3px 0px 0px black, 
+        6px 6px 0px 0px black, 
+        9px 9px 0px 0px  black;
 }
 
 nav { 
@@ -61,6 +78,10 @@ button {
     padding: 10px 20px;
     cursor: pointer;
     transition: all 2.5s;
+    box-shadow: 
+    3px 3px 0px 0px black, 
+    6px 6px 0px 0px black, 
+    9px 9px 0px 0px  black;
 }
 
 button:hover {
@@ -78,6 +99,11 @@ input {
     font-size: 20px;
     color: black;
     padding: 10px 20px;
+    margin-left: 0.9em;
+    box-shadow: 
+    3px 3px 0px 0px black, 
+    6px 6px 0px 0px black, 
+    9px 9px 0px 0px  black;
 }
 
 input:focus {
@@ -99,5 +125,15 @@ input:focus {
     font-size: 16px;
     margin-left: 16px;
 }
+.underline {
+    width: 30px;
+    height: 2px;
+    background-color: black;
+    border: 1px solid black;
+    transition: width 1.5s;
+}
 
+.logo:hover .underline {
+    width: 300px;
+}
 
