@@ -1,5 +1,8 @@
 
 
+
+
+
 body { 
     min-height: 100vh;
     background-color: beige;
@@ -90,7 +93,7 @@ button {
     color: black;
     padding: 10px 20px;
     cursor: pointer;
-    transition: all 2.5s;
+    transition: all 0.5s;
     box-shadow: 
     3px 3px 0px 0px black, 
     6px 6px 0px 0px black, 
@@ -105,7 +108,7 @@ button:hover {
 /* BARRA DE BUSCA */
 
 input {
-    width: 600px;
+    width: 500px;
     background: none;
     border: 3px solid black;
     font-family: 'Courier New', Courier, monospace;
@@ -143,11 +146,12 @@ input:focus {
     height: 2px;
     background-color: black;
     border: 1px solid black;
-    transition: width 1.5s;
+    transition: width 0.5s;
 }
 
 .logo:hover .underline {
-    width: 300px;
+    width: 600px;
+    height: 600px;
 }
 
 @keyframes shake {
@@ -171,3 +175,18 @@ input:focus {
 
 footer * { 
     font-family: 'Courier New', Courier, monospace;
+}
+
+#burger { 
+    display: none;
+}
+
+
+@media (max-width: 800px) {
+   #burger {
+    display: flex;
+   }
+   #menu-desktop {
+    display: none;
+   }
+}
