@@ -171,3 +171,13 @@ input:focus {
 
 footer * { 
     font-family: 'Courier New', Courier, monospace;
+}
+
+canvas { 
+    border: 3px solid black;
+    box-shadow: 
+    3px 3px 0px 0px black, 
+    6px 6px 0px 0px black, 
+    9px 9px 0px 0px  black;
+    max-width: 80vw;
+}

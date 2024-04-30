@@ -7,42 +7,40 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Linefont:wght@100&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="menu.css">
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.9.2/lib/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script type="module" src="script.js" defer></script>
+    <script src="sketch.js"></script>
+    <script src="bb.js/api.js"></script>
+    
     <title>BrutaBusca</title>
 </head>
 
 <body>
     <header>
-        <div class="logo">
-            <h1>BUSCA BRUTA
-                <div class="underline"></div>
-            </h1>
-        </div>
+      
 
-        <div class="menu">
+        <div class="menu">    
+              
             <nav>
-                <div class="menu-cursos">
-                    <a href="cursos.html">CURSOS</a>
-                </div>
-                <div class="menu-temas">
-                    <a href="#temas">TEMAS</a>
-                </div>
+                
                 <div class="login">
                     <button id="login-btn"> FAZER LOGIN </button>
                 </div>
+                
             </nav>
-        </div>
+            
     </header>
     <main id="tela">
-        <div class="caixaBusca">
-            <button id="botaoBusca" onclick="buscaArte()">BUSCAR</button>
+
+        <!-- <div class="caixaBusca">
+            <button id="botaoBusca" >BUSCAR</button>
             <input type="search" id="caixaBusca">
         </div>
         <footer>
             <p> <span style="border: 1px solid black; padding: 5px; margin-right: 5px;">&#x2117; Left</span>2024 - IA</p>
-        </footer>
+        </footer> -->
     </main>
 
 </body>

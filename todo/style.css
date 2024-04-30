@@ -1,0 +1,62 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilos da lista de tarefas */
+.todo-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.todo-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.todo-item input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.todo-item .task {
+    flex-grow: 1;
+}
+
+/* Estilos do formulário de adição de tarefas */
+.add-task-form {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.add-task-form input[type="text"] {
+    flex-grow: 1;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.add-task-form button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-task-form button:hover {
+    background-color: #0056b3;
+}

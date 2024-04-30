@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Linefont:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <script type="module" src="script.js" defer></script>
+    <title>BrutaBusca</title>
+    <style>
+        #todo-area {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            height: 50vh;
+            width: 50vw;
+            background-color: #30e9ab;
+        }
+
+        #task-form {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        #task-input {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 300px;
+        }
+
+        #add-task {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+        }
+
+        #task-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            width: 300px;
+        }
+
+        .task {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .task button {
+            padding: 5px 10px;
+            font-size: 14px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .task button.delete {
+            background-color: tomato;
+        }
+
+        .task button.done {
+            background-color: lightgreen;
+        }
+
+        .task button.undone {
+            background-color: lightcoral;
+        }
+        .task-list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+        #task-list > li {
+            font-family: 'monospace', sans-serif;
+            font-size: 40px;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <main id="todo-area">
+        <form id="task-form">
+            <input type="text" id="task-input" placeholder="Digite uma tarefa">
+            <button id="add-task" onclick='event.preventDefault(); addTask(event)' style="background-color: tomato;"  >Adicionar</button>
+            <button id="clear-task" onclick='event.preventDefault(); clear(event)' style="background-color: magenta;" >Limpar</button>
+        </form>
+        
+        <ul id="task-list">
+
+            <!-- As tarefas serão adicionadas dinamicamente aqui -->
+        </ul>
+    </main>
+
+</body>
+
+</html>
