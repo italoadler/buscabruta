@@ -72,10 +72,13 @@ function createChart(data) {
         .attr('y2', d => yScale(d[3]))
         .attr('stroke', 'black')
         .attr('stroke-width', 1);
+
+    // zoom in and out
+    
 }
 
 // URL da API
-const url = 'https://api.binance.com/api/v3/klines?symbol=BTCUSDT&interval=1d';
+const url = 'https://api.binance.com/api/v3/klines?symbol=BTCUSDT&interval=1h';
 
 // Buscar dados e criar o gráfico
 buscar(url).then(data => {

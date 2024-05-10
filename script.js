@@ -23,9 +23,10 @@ document.addEventListener('DOMContentLoaded', function() {
             caixabusca.class
         }
     } 
-    function buscar() {
+    function buscar() { 
       
         document.querySelector('canvas').addEventListener('click', function() {
         });
     }
 }
+s
