@@ -1,0 +1,31 @@
+ul { 
+    list-style-type: none;
+    padding: 0;
+    margin: 12rem;
+    display: grid;
+    align-content: stretch;
+    justify-content: center;
+    align-items: end;
+    justify-items: center;
+    min-height: 80vh;
+    border: 0.2rem solid black;
+    /* background: no-repeat url('https://ubuweb.com/images/beckett_header_new.jpg'); */
+    background-size: cover;
+    box-shadow: 
+    0.2rem 0.2rem 0 0 rgb(191, 23, 23), 
+    0.4rem 0.4rem 0 0 rgb(233, 73, 4), 
+    0.6rem 0.6rem 0 0 rgb(41, 132, 2);
+}
+
+li {
+    : 12.5rem;
+    letter-spacing: 0.75rem;
+    transition: letter-spacing 1s;
+    font-family: Anton, sans-serif;
+    color: rgb(58, 55, 58);
+    font-size: 1.5rem;
+    box-shadow: 
+    0.2rem 0.2rem 0 0 black, 
+    0.4rem 0.4rem 0 0 black, 
+    0.6rem 0.6rem 0 0 black;
+}
