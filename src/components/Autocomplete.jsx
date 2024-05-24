@@ -283,15 +283,19 @@ const Autocomplete = () => {
     setSuggestions(frutas);
   }, []);
 
-  const handleInputChange = (event) => {
-    const value = event.target.value;
-    setInputValue(value);
+const handleInputChange = (event) => {
+  const value = event.target.value;
+  setInputValue(value);
 
+  if (value.trim() === '') {
+    setFilteredSuggestions([]);
+  } else {
     const filtered = suggestions.filter((suggestion) =>
       suggestion.toLowerCase().includes(value.toLowerCase())
     );
     setFilteredSuggestions(filtered);
-  };
+  }
+};
 
   const handleSuggestionClick = (value) => {
     setInputValue(value);
@@ -304,7 +308,7 @@ const Autocomplete = () => {
         type="text"
         value={inputValue}
         onChange={handleInputChange}
-        placeholder="Type to search..."
+        placeholder="Busque por frutas..."
       />
       <ul>
         {filteredSuggestions.map((suggestion, index) => (
